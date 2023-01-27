@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "@types/express": "^4.17.16",
+    "express": "^4.18.2",
+    "ts-node-dev": "^2.0.0"
+  },
+  "name": "m4-sp1-lista-de-compras-lelouching",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  },
+  "scripts": {
+    "dev": "ts-node-dev --cls --rs --ignore-watch node_modules src/app.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kenzie-Academy-Brasil-Developers/m4-sp1-lista-de-compras-Lelouching.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kenzie-Academy-Brasil-Developers/m4-sp1-lista-de-compras-Lelouching/issues"
+  },
+  "homepage": "https://github.com/Kenzie-Academy-Brasil-Developers/m4-sp1-lista-de-compras-Lelouching#readme",
+  "description": ""
+}
