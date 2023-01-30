@@ -1,11 +1,13 @@
 import { Request, Response } from "express"
-import { database, ids } from "./database"
+import { database } from "./database"
 import { validatedKeysData } from "./interfaces"
+
+let ids: number = 0
 
 export const createPurchaseList = (req: Request, res: Response): Response => {
     try {
-        const id: number = ids.length
-        ids.push(id)
+        const id: number = ids + 1
+        ids = id
         
         const purchaseList = {id: id, ...req.body}
         database.push(purchaseList)
@@ -16,6 +18,7 @@ export const createPurchaseList = (req: Request, res: Response): Response => {
             message: error
         })
     }
+
 }
 
 export const allPurchaseList = (req: Request, res: Response): Response => {
